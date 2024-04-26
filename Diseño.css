@@ -1,0 +1,94 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  background-image: url("FoticoTL.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% del viewport vertical */
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center; /* Centra el texto */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+  justify-content: space-between; /* Espacio uniforme entre los elementos */
+}
+
+.six {
+  width: 48%; /* Ajusta el ancho para que haya espacio entre las columnas */
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block; /* Asegura que las etiquetas ocupen una línea completa */
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+#lista-tweets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tweet {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative; /* Para posicionar el icono de eliminación */
+  padding-right: 30px; /* Ajusta el espaciado a la derecha para dejar espacio para la "X" */
+}
+
+.borrar-tweet {
+  position: absolute;
+  top: 50%;
+  right: 5px; /* Ajusta la posición horizontal */
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+}
+
+.borrar-tweet:hover {
+  color: #333;
+}
